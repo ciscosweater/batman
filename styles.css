@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+h2 {
+    font-size: 35px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: #fff;
+}
+
+#contact-h2 {
+    margin-bottom: -15px;
+}
+
+label {
+    display: block;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-top: -15px;
+    text-align: center;
+}
+
+input {
+    width: 200px;
+    border-style: none;
+    border-radius: 10px;
+    padding: 7px 0px 7px 5px;
+    margin: 10px 0 0 0;
+}
+
+.contact-textarea {
+    resize: none;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 3px #fff;
+    border: 5px solid transparent;
+    margin-top: 15px;
+    margin-bottom: -30px;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#banner {
+    background-image: url('https://preview.redd.it/6092ltrt8nt71.jpg?auto=webp&s=c26d698d5d92796be9c6ab47f22dba63a7be96c3');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+#banner-secondary {
+    background-image: url('https://preview.redd.it/6092ltrt8nt71.jpg?auto=webp&s=c26d698d5d92796be9c6ab47f22dba63a7be96c3');
+    background-position: 100% 83.5%;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+#trailer-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+#contact-container {
+    position: relative;
+    margin: 100px auto;
+    width: 550px;
+    height: 700px;
+    border-radius: 100px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: rgba(255, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 10px 2px #730c0c;
+}
+
+#contact-container::before {
+    content: "";
+    background-image: url('https://i.pinimg.com/originals/83/7c/3a/837c3ac3812d6f8eeaa3bc5a15933357.png');
+    background-size: cover;
+    background-position: 50% 50%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 100px;
+    z-index: -1;
+}
+
+#comment-container {
+    width: 100%;
+    height: auto;
+    margin-bottom: 150px;
+}
+
+#comment-container > h2 {
+    text-align: center;
+    margin: 30px 0 10px 0px;
+}
+
+#comment-content {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1200px;
+    height: 800px;
+}
+
+#comments {
+    width: 800px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+#send-container {
+    width: 400px;
+    height: 100%;
+}
+
+#send-content {
+    margin: 15px auto;
+    width: 350px;
+    height: 500px;
+    background-color: #450707;
+    border-radius: 20px;
+}
+
+#send-content > form {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.comment-input {
+    margin-bottom: 10px;
+}
+
+.comment-textarea {
+    margin-top: 10px;
+    width: 300px;
+    height: 120px;
+    resize: none;
+    border-radius: 20px;
+}
+
+.comment-button {
+    width: 150px;
+    height: 30px;
+    background-color:  #ffcc00;
+    color: #450707;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+}
+
+.comment-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.comment-divider {
+    width: 30%;
+    height: 2px;
+    background-color: #170202;
+    margin: 10px auto 30px;
+}
+
+.template-comment {
+    margin: 15px 40px 0 10px;
+    padding: 10px 0px 10px 10px;
+    background-color: #450707;
+    border-radius: 20px;
+
+}
+
+#trailer-container > .content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact-container > .content {
+    margin: 30px 0 30px 0;
+    background-color: transparent;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#photos-container {
+    margin: 50px auto 125px;
+    width: 1200px;
+    height: 3250px;
+}
+
+#photos-container > h2 {
+    color: #fff;
+    text-align: center;
+    margin: 0 auto 50px;
+    font-size: 1.8em;
+}
+
+#photos-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+#photo1 {
+    background-image: url('https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/01/batman-robert-pattinson-2022.jpg?w=1200&h=1200&crop=1');
+    background-size: cover;
+    width: 100%;
+    height: 20%;
+    background-position: 50% 30%;
+    border-radius: 50px;
+}
+
+#photo2 {
+    background-image: url('https://www.tribunapr.com.br/wp-content/uploads/sites/56/2022/02/28121731/rev-1-TBM-11721r_High_Res_JPEG.jpeg');
+    background-size: cover;
+    width: 100%;
+    height: 20%;
+    background-position: 50% 30%;
+    border-radius: 50px;
+}
+
+#photo3 {
+    background-image: url('https://designe.com.br/wp-content/uploads/2022/03/Mulher-gato-Selina-Kye-e-Batman-em-Batman-2022.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 20%;
+    background-position: 50% 0%;
+    border-radius: 50px;
+}
+
+#photo4 {
+    background-image: url('https://geekblog.com.br/wp-content/uploads/2022/01/Novas-imagens-de-The-Batman-7.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 20%;
+    background-position: 50% 0%;
+    border-radius: 50px;
+}
+
+#photo5 {
+    background-image: url('https://www.geeklando.com.br/wp-content/uploads/2021/12/The-Batman-Lancamento-na-HBO-Max-sera-em-abril-de-2022.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 20%;
+    background-position: 50% 0%;
+    border-radius: 50px;
+}
+
+.photo {
+    cursor: pointer;
+    transition: 1s;
+}
+
+.photo:hover {
+    transform: scale(1.02);
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.description {
+    color: #fff;
+    font-size: 19px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    width: 70%;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: #d21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.contact-button {
+    width: 200px;
+    height: 60px;
+    background-color: #2e0505;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.contact-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.banner-1 {
+    background-image: url('https://preview.redd.it/robert-pattinson-is-the-best-live-action-version-of-batman-v0-5quh0wv3nzp91.jpg?width=640&crop=smart&auto=webp&s=e83b3194079005ec2d5bbd1474347083aad4ed18');
+}
+
+.banner-2 {
+    background-image: url('https://akns-images.eonline.com/eol_images/Entire_Site/2022122/rs_634x1024-220222122542-634-Zoe_Kravitz-the_batman-catwoman-gj.jpg?fit=around%7C634:1024&output-quality=90&crop=634:1024;center,top');
+}
+
+.banner-3 {
+    background-image: url('https://2.bp.blogspot.com/-N9DtMsBCAwI/XbtdLT8foBI/AAAAAAACzVU/bTyfrBq-ApwVG8DUfRmWYVlvKyzXJ-08wCK4BGAYYCw/s1600/jeffreywrights.jpg');
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-divider {
+    width: 30%;
+    height: 2px;
+    background-color: #450707;
+}
+
+@media(max-width: 768px) {
+
+    #comment-container {
+        width: 100%;
+        height: 950px;
+        margin-bottom: 1200px;
+    }
+
+    .template-comment {
+        margin: 5px 0;
+        padding: 10px 10px 10px 10px;
+    }
+
+    #comments {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+    }
+
+    #comment-content {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: auto;
+    }
+
+    #photos-content {
+        gap: 15px;
+    }
+
+    #photos-container {
+        width: 90%;
+        height: 1200px;
+        margin: 50px auto 200px;
+    }
+
+    #photo1 {
+        border-radius: 10px;
+    }
+
+    #photo2 {
+        border-radius: 10px;
+    }
+
+    #photo3 {
+        border-radius: 10px;
+    }
+
+    #photo4 {
+        border-radius: 10px;
+    }
+
+    #photo5 {
+        border-radius: 10px;
+    }
+
+    #contact-container {
+        position: relative;
+        margin: 50px auto;
+        width: 90%;
+        height: 700px;
+        border-radius: 10px;
+        background-color: rgba(255, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+    }
+
+    #contact-container::before {
+        content: "";
+        background-image: url('https://i.pinimg.com/originals/83/7c/3a/837c3ac3812d6f8eeaa3bc5a15933357.png');
+        background-size: cover;
+        background-position: 50% 50%;
+        position: absolute;
+        border-radius: 10px;
+        z-index: -1;
+    }
+
+    #contact-container > .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .contact-textarea {
+        width: 250px;
+    }
+
+    #contact-h2 {
+        font-size: 25px;
+    }
+
+    footer > span:last-of-type {
+        margin-bottom: 30px;
+    }
+
+    .footer-navigation {
+        display: block;
+    }
+
+    .footer-list {
+        margin-bottom: 40px;
+    }
+
+    .footer-list > a > li {
+        margin: 5px 0 5px 0;
+    }
+    
+    nav {
+        display: none;
+    }
+
+    #banner {
+        height:200px;
+        background-position: 70%;
+    }
+
+    #trailer-container {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -100px;
+        margin-top: 70px;
+    }
+
+    #trailer-container > .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #sinopse {
+        text-align: center;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 0px;
+    }
+
+    .description {
+        width: 100%;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+
+    .card {
+        margin-left: -5px;
+    }
+}
